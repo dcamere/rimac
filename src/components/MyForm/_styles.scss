@@ -1,0 +1,62 @@
+@import '../../styles/variables';
+
+.form {
+    width: 100%;
+    padding: 0 calc-grid-col(37, 4);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0;
+    @media screen and (min-width: 768px) {
+        width: calc-grid-col(37, 23);
+    }
+
+    input {
+        width: 100%;
+        margin-bottom: 20px;
+        border: 1px gray solid;
+        border-radius: 5px;
+        height: 56px;
+        padding: 25px;
+        @media screen and (min-width: 768px) {
+            width: 100%;
+            max-width: 288px;
+        }
+
+        &:focus, &:active, &:visited, &:target{
+            outline: none;
+        }
+
+        &.error {
+            border: 1px red solid;
+        }
+    }
+
+    .error-msg {
+        color: red;
+        margin: 10px 0 30px;
+    }
+
+    .checkbox {
+        display: flex;
+        width: 100%;
+        max-width: 288px;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+
+        input {
+            width: 30px;
+            height: 30px;
+            margin: 10px;
+            vertical-align: middle;
+            cursor: pointer;
+        }
+
+        label {
+            vertical-align: middle;
+            cursor: pointer;
+        }
+    }
+}

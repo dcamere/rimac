@@ -1,0 +1,3 @@
+@function calc-grid-col($total-columns, $columns) {
+    @return (100% / $total-columns) * $columns;
+}

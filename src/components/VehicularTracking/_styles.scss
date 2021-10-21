@@ -1,0 +1,17 @@
+@import '../../styles/variables';
+
+.vehicular-tracking {
+    background-image: url('vehiculartracking-desktop.png');
+    background-color: gray;
+    width: calc-grid-col(37, 37);
+    height: calc(100vh - 64px);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top center;
+    display: flex;
+
+    @media screen and (min-width: 768px) {
+        width: calc-grid-col(37, 14);
+        margin-bottom: 0;
+    }
+}

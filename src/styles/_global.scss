@@ -1,0 +1,46 @@
+body {
+    // background-color: gray
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+header {
+    height: 64px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.wrap {
+    @media screen and (min-width: 768px) {
+        max-width: 1360px;
+        margin: 0 auto;
+        width: 100%;
+    }
+}
+
+.half-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
+    }
+}

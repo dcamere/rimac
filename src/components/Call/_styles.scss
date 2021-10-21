@@ -1,0 +1,50 @@
+.call {
+    // position: absolute;
+    // right: 10%;
+    // top: 20px;
+    
+    &__pretext {
+        display: none;
+        @media screen and (min-width: 768px) {
+            display: block;
+            font-size: 12px;
+            margin-right: 23px;
+            float: left;
+            color: #676F8F;
+            line-height: 22px;
+        }
+    }
+
+    &__link {
+        text-decoration: none;
+    }
+
+    &__text, &__number {
+        color: #6769FF;
+        margin-left: 4px;
+        float: left;
+    }
+
+    &__image {
+        height: 24px;
+        width: 24px;
+        float: left;
+    }
+
+    &__text {
+        font-size: 14px;
+        line-height: 24px;
+        @media screen and (min-width: 768px) {
+            display: none;
+        }
+    }
+
+    &__number {
+        display: none;
+        @media screen and (min-width: 768px) {
+            display: block;
+            font-size: 14px;
+            line-height: 24px;
+        }
+    }
+}
